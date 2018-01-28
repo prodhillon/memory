@@ -91,7 +91,7 @@ class MemoryGame extends React.Component{
 	//Function to set previous card if no previous card found.
 	setPreviousCard(id,name,gameCards){
 		//Update the number of clicks
-        let updateClicks=this.state.clicksPerformed;
+        	let updateClicks=this.state.clicksPerformed;
 		//Set current card as previous card
 		this.setState({previousCard: {id, name}, disabled: false, clicksPerformed: updateClicks + 1});// For First click on every new match. No Previous card found
 	}
