@@ -2,7 +2,7 @@
 Memory Game : HW 03
 The code has two classes :
 1. MemoryGame : It handles logic related to checking cards for match, number of clicks performed.
-2. GameCard : It deals with logic related  to displaying/customizing cards based on status viz., Matched, un-flipped.
+2. GameCard : It deals with logic related  to displaying/customizing cards based on status viz., Matched, Un-flipped.
 
  ***********************************************************************************************
 
@@ -130,10 +130,10 @@ class MemoryGame extends React.Component{
 	//Function to update game status
 	updateGameStatus(cardsToUpdate, boolmatch){
 		if(boolmatch===true){
-            //Update count for matches done
+            		//Update count for matches done
 			let updateMatch = this.state.matchdone;
-            //Update number of clicks
-            let updateClicks=this.state.clicksPerformed;
+            		//Update number of clicks
+            		let updateClicks=this.state.clicksPerformed;
 			this.setState({cardsToUpdate, previousCard: '', disabled: false, clicksPerformed: updateClicks + 1, matchdone: updateMatch + 2});// Adding 2 as matchupdate will happen for 2 cards.
 		}
 		else{
@@ -163,7 +163,7 @@ class MemoryGame extends React.Component{
 				console.log("Inside Medium score");				
 				msgScores = 80 + " (Good Job. Near Perfect !)";
 			}
-            if(this.state.clicksPerformed  == 25 || this.state.clicksPerformed  == 30){
+            		if(this.state.clicksPerformed  == 25 || this.state.clicksPerformed  == 30){
 				console.log("Inside Medium score");				
 				msgScores = 80 + " (Good Job. Near Perfect !)";
 			}
